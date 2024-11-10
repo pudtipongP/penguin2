@@ -39,7 +39,7 @@ if st.button("Predict Species"):
     x_new['sex'] = sex_encoder.transform(x_new['sex'])
 
     # Ensure the features are in the correct order, matching what the model expects
-    input_data = x_new[['culmen_length_mm', 'culmen_depth_mm', 'flipper_length_mm', 'body_mass_g', 'sex', 'island']]
+    input_data = x_new[['island' , 'culmen_length_mm', 'culmen_depth_mm', 'flipper_length_mm', 'body_mass_g', 'sex']]
 
     # Make the prediction
     prediction = model.predict(input_data)
