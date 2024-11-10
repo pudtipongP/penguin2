@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 
 # Load the trained KNN model and encoders (for species, sex, and island)
-with open('knn_penguin_with_sex_and_island.pkl', 'rb') as file:
+with open('knn_penguin.pkl', 'rb') as file:
     model, species_encoder, sex_encoder, island_encoder = pickle.load(file)
 
 # App title and description
